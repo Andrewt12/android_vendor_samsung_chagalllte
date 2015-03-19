@@ -24,6 +24,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/samsung/chagalllte/proprietary/lib/hw/camera.universal5420.so:system/lib/hw/camera.vendor.universal5420.so \
     vendor/samsung/chagalllte/proprietary/lib/libak09911c.so:system/lib/libak09911c.so \
+    vendor/samsung/chagalllte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/chagalllte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/chagalllte/proprietary/lib/libarcsoft_flawlessface2.so:system/lib/libarcsoft_flawlessface2.so \
     vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_bestface.so:system/lib/libarcsoft_magicshot_bestface.so \
     vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_bestphoto.so:system/lib/libarcsoft_magicshot_bestphoto.so \
@@ -129,4 +131,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf \
     vendor/samsung/chagalllte/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
     vendor/samsung/chagalllte/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    vendor/samsung/chagalllte/proprietary/sbin/sswap:root/sbin/sswap
+    vendor/samsung/chagalllte/proprietary/sbin/sswap:root/sbin/sswap \
+    vendor/samsung/chagalllte/proprietary/sbin/cbd:root/sbin/cbd
