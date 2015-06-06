@@ -1,5 +1,5 @@
 # Sample variables file for Samsung BCM4354WLBGA iPA, eLNA board with SDIO for production package
-# Chagall-3G Rev0.4 - 2014. 2. 20
+# Chagall-LTE Rev0.4 - 2014. 2. 18
 NVRAMRev=$Rev: 373428 $
 sromrev=11
 boardrev=0x1101
@@ -78,13 +78,13 @@ tempthresh=255
 tempoffset=255
 rawtempsense=0x1ff
 
-## Rev0.4 TSSI Calibration -2014.2.20 - FCC(2G:-4dB backoff) (5G : -4dB backoff)
-pa2ga0=0xff77,0x1ba4,0xfd03
-pa2ga1=0xff6d,0x1a8d,0xfd0f
-pa5ga0=0xff3c,0x1ac0,0xfcd0,0xff3b,0x1a9b,0xfcd5,0xff3b,0x1a9d,0xfcd6,0xff3b,0x1ae2,0xfcce
-pa5ga1=0xff46,0x1ace,0xfcd7,0xff3b,0x1a28,0xfcdf,0xff43,0x1a2f,0xfce6,0xff47,0x1a9c,0xfcdd
+## Rev0.4 TSSI Calibration -2014.2.18 - FCC(2G:-4dB backoff) (5G : -4dB backoff)
+pa2ga0=0xff73,0x1b81,0xfd01
+pa2ga1=0xff70,0x1b99,0xfcf9
+pa5ga0=0xff3a,0x19fd,0xfce3,0xff3c,0x1a2b,0xfcde,0xff3c,0x19f6,0xfce7,0xff3d,0x1a24,0xfce3
+pa5ga1=0xff43,0x19e4,0xfceb,0xff42,0x19b4,0xfcf1,0xff49,0x1a1b,0xfceb,0xff46,0x1a08,0xfced
 
-## Target Power - FCC (Target Power : 2G 4dB add/ 5G 3dB add)
+## Chagall_LTE Target Power - FCC (Target Power : 2G 4dB add/ 5G 3dB add)
 ## 2G: 11b-14dBm/11g-12dBm/11n-12dBm)
 ## 5G: 11a-10dBm/11n_40M-10dBm/11ac_80M-10dBm
 
@@ -158,8 +158,8 @@ swctrlmap_2g=0x0000140c,0x28300000,0x08200000,0x803020,0x0ff
 cckdigfilttype=1
 
 ## 2G TX power compensation
-powoffs2gtna0=-1,-1,0,0,0,-1,0,0,0,0,0,0,0,0
-powoffs2gtna1=1,1,1,1,1,1,0,0,0,1,1,1,1,0
+powoffs2gtna0=-1,0,-1,0,-1,-3,-3,-3,-2,0,0,0,1,0
+powoffs2gtna1=3,3,4,4,4,3,2,2,3,4,3,4,4,0
 
 #BT coex
 btc_mode=1

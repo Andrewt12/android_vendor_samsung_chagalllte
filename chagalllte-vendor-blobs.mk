@@ -22,6 +22,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/vendor/firmware/bcm4350_A0.hcd:system/vendor/firmware/bcm4350_A0.hcd \
     vendor/samsung/chagalllte/proprietary/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0184.0286_Chagall_WIFI_ORC.hcd:system/vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0184.0286_Chagall_WIFI_ORC.hcd \
     vendor/samsung/chagalllte/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
+    vendor/samsung/chagalllte/proprietary/media/battery_cover.spi:system/media/battery_cover.spi \
+    vendor/samsung/chagalllte/proprietary/media/battery_error.spi:system/media/battery_error.spi \
+    vendor/samsung/chagalllte/proprietary/media/battery_low.spi:system/media/battery_low.spi \
+    vendor/samsung/chagalllte/proprietary/media/battery_temperature_error.spi:system/media/battery_temperature_error.spi \
+    vendor/samsung/chagalllte/proprietary/media/battery_temperature_limit.spi:system/media/battery_temperature_limit.spi \
+    vendor/samsung/chagalllte/proprietary/media/dock_error.spi:system/media/dock_error.spi \
+    vendor/samsung/chagalllte/proprietary/media/incompatible_charger.spi:system/media/incompatible_charger.spi \
+    vendor/samsung/chagalllte/proprietary/media/lcd_density.txt:system/media/lcd_density.txt \
+    vendor/samsung/chagalllte/proprietary/media/percentage.spi:system/media/percentage.spi \
+    vendor/samsung/chagalllte/proprietary/media/wave_loop.spi:system/media/wave_loop.spi \
+    vendor/samsung/chagalllte/proprietary/media/wireless_left.spi:system/media/wireless_left.spi \
     vendor/samsung/chagalllte/proprietary/lib/hw/camera.universal5420.so:system/lib/hw/camera.vendor.universal5420.so \
     vendor/samsung/chagalllte/proprietary/lib/libak09911c.so:system/lib/libak09911c.so \
     vendor/samsung/chagalllte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
@@ -46,15 +57,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/lib/libliveframework.so:system/lib/libliveframework.so \
     vendor/samsung/chagalllte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/chagalllte/proprietary/lib/libvdis.so:system/lib/libvdis.so \
-    vendor/samsung/chagalllte/proprietary/bin/drmserver:system/bin/drmserver \
-    vendor/samsung/chagalllte/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/samsung/chagalllte/proprietary/bin/drmserver:system/bin/drmserver.samsung \
+    vendor/samsung/chagalllte/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/samsung/chagalllte/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/samsung/chagalllte/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/samsung/chagalllte/proprietary/csc/TGY/system/lib/libWVphoneAPI.so:system/csc/TGY/system/lib/libWVphoneAPI.so \
+    vendor/samsung/chagalllte/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
     vendor/samsung/chagalllte/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/chagalllte/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/chagalllte/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/chagalllte/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/samsung/chagalllte/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
@@ -72,18 +84,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
     vendor/samsung/chagalllte/proprietary/lib/libmaet.so:system/lib/libmaet.so \
     vendor/samsung/chagalllte/proprietary/lib/libsxqk_skia.so:system/lib/libsxqk_skia.so \
-    vendor/samsung/chagalllte/proprietary/media/battery_cover.spi:system/media/battery_cover.spi \
-    vendor/samsung/chagalllte/proprietary/media/battery_error.spi:system/media/battery_error.spi \
-    vendor/samsung/chagalllte/proprietary/media/battery_low.spi:system/media/battery_low.spi \
-    vendor/samsung/chagalllte/proprietary/media/battery_temperature_error.spi:system/media/battery_temperature_error.spi \
-    vendor/samsung/chagalllte/proprietary/media/battery_temperature_limit.spi:system/media/battery_temperature_limit.spi \
-    vendor/samsung/chagalllte/proprietary/media/dock_error.spi:system/media/dock_error.spi \
-    vendor/samsung/chagalllte/proprietary/media/incompatible_charger.spi:system/media/incompatible_charger.spi \
-    vendor/samsung/chagalllte/proprietary/media/lcd_density.txt:system/media/lcd_density.txt \
-    vendor/samsung/chagalllte/proprietary/media/percentage.spi:system/media/percentage.spi \
-    vendor/samsung/chagalllte/proprietary/media/wave_loop.spi:system/media/wave_loop.spi \
-    vendor/samsung/chagalllte/proprietary/media/wireless_left.spi:system/media/wireless_left.spi \
-    vendor/samsung/chagalllte/proprietary/media/wireless_right.spi:system/media/wireless_right.spi \
     vendor/samsung/chagalllte/proprietary/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin:system/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin \
     vendor/samsung/chagalllte/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin \
     vendor/samsung/chagalllte/proprietary/vendor/firmware/setfile_6b2_eeprom.bin:system/vendor/firmware/setfile_6b2_eeprom.bin \
@@ -114,22 +114,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/bin/scranton_RD:system/bin/scranton_RD \
     vendor/samsung/chagalllte/proprietary/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so \
     vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_apsta.bin_a0:system/etc/wifi/bcmdhd_apsta.bin_a0 \
+    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_apsta.bin_4354_a1:system/etc/wifi/bcmdhd_apsta.bin_4354_a1 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_ibss.bin_a0:system/etc/wifi/bcmdhd_ibss.bin_a0 \
+    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_ibss.bin_4354_a1:system/etc/wifi/bcmdhd_ibss.bin_4354_a1 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_mfg.bin_a0:system/etc/wifi/bcmdhd_mfg.bin_a0 \
+    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_mfg.bin_4354_a1:system/etc/wifi/bcmdhd_mfg.bin_4354_a1 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_sta.bin_a0:system/etc/wifi/bcmdhd_sta.bin_a0 \
+    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_sta.bin_4354_a1:system/etc/wifi/bcmdhd_sta.bin_4354_a1 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_sta_tput.bin:system/etc/wifi/bcmdhd_sta_tput.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_sta_tput.bin_a0:system/etc/wifi/bcmdhd_sta_tput.bin_a0 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_mfg.txt_4354_a0:system/etc/wifi/nvram_mfg.txt_4354_a0 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_mfg.txt_4354_a1:system/etc/wifi/nvram_mfg.txt_4354_a1 \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_net.txt_4354_a0:system/etc/wifi/nvram_net.txt_4354_a0 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_net.txt_4354_a1:system/etc/wifi/nvram_net.txt_4354_a1 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf \
     vendor/samsung/chagalllte/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
     vendor/samsung/chagalllte/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     vendor/samsung/chagalllte/proprietary/sbin/sswap:root/sbin/sswap \
-    vendor/samsung/chagalllte/proprietary/sbin/cbd:root/sbin/cbd
+    vendor/samsung/chagalllte/proprietary/sbin/cbd:root/sbin/cbd 
